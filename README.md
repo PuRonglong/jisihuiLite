@@ -1,10 +1,14 @@
 # jisihuiLite
 
+[![](https://badge.juejin.im/entry/5a959a936fb9a063543c5ad8/likes.svg?style=flat)](https://juejin.im/post/5a791ed05188254e76178c7b)
+
 最近接触小程序，记录一下从零开发到提交审核正式发布的完整过程，和其中踩过的坑，与大家一起学习。
 
 最终效果
 
 ![效果展示](http://upload-images.jianshu.io/upload_images/165092-dee6d16c1a3c0041.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![集思会Lite](http://upload-images.jianshu.io/upload_images/165092-774431ef59cb084e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 一.选型
 
