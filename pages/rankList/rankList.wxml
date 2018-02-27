@@ -1,0 +1,52 @@
+<view>
+    <view class="rankList-title-week">
+        <image class="rankList-title-image" src="../../assets/hot.png" />
+        周推榜
+    </view>
+
+    <view class="rankList-content-week">
+        <view class="tab-content-recommend" wx:for="{{weekList}}" wx:key="{{index}}" wx:item="item">
+            <view class="recommend-left">
+                <view class="recommend-title" data-id="{{item.id}}" data-title="{{item.name}}" bindtap="goBookDetail">
+                    <view class="recommend-book-left">
+                        <view class="recommend-book-number {{index < 3 ? 'recommend-book-name-hot' : ''}}">
+                            {{index + 1}}
+                        </view>
+                        <view class="recommend-book-name">
+                            .{{item.name}}
+                        </view>
+                    </view>
+                    <view class="recommend-book-author">
+                        {{item.author == null?'':item.author}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="rankList-title-month">
+        <image class="rankList-title-image" src="../../assets/hot.png" />
+        月推榜
+    </view>
+
+    <view class="rankList-content-month">
+        <view class="tab-content-recommend" wx:for="{{monthList}}" wx:key="{{index}}" wx:item="item">
+            <view class="recommend-left">
+                <view class="recommend-title" data-id="{{item.id}}" data-title="{{item.name}}" bindtap="goBookDetail">
+                    <view class="recommend-book-left">
+                        <view class="recommend-book-number {{index < 3 ? 'recommend-book-name-hot' : ''}}">
+                            {{index + 1}}
+                        </view>
+                        <view class="recommend-book-name">
+                            .{{item.name}}
+                        </view>
+                    </view>
+                    <view class="recommend-book-author">
+                        {{item.author == null?'':item.author}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>

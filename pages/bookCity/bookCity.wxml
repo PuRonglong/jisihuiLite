@@ -1,0 +1,178 @@
+<view class="main">
+    <view class="bookCity-container">
+        <view class="bookCity-header-wrapper" data-category="全部图书" data-type="-1" bindtap="goBookType">
+            <image class="bookCity-header-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/allBook.png" alt="" />
+            <view class="bookCity-header-text">全部图书</view>
+        </view>
+
+        <view class="bookCity-bod-container">
+            <view class="bookCity-body-item bookCity-body-item-one" data-category="网络技术" data-type="1" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/1.png" alt="" />
+                <view class="bookCity-item-text">网络技术</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-two" data-category="古典文学" data-type="2" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/2.png" alt="" />
+                <view class="bookCity-item-text">古典文学</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-three" data-category="外国文学" data-type="3" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/3.png" alt="" />
+                <view class="bookCity-item-text">外国文学</view>
+            </view>
+        </view>
+
+        <view class="bookCity-bod-container">
+            <view class="bookCity-body-item bookCity-body-item-one" data-category="财经管理" data-type="4" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/4.png" alt="" />
+                <view class="bookCity-item-text">财经管理</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-two" data-category="哲学宗教" data-type="5" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/5.png" alt="" />
+                <view class="bookCity-item-text">哲学宗教</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-three" data-category="家庭养生" data-type="6" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/6.png" alt="" />
+                <view class="bookCity-item-text">家庭养生</view>
+            </view>
+        </view>
+
+        <view class="bookCity-bod-container">
+            <view class="bookCity-body-item bookCity-body-item-one" data-category="现代文学" data-type="7" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/7.png" alt="" />
+                <view class="bookCity-item-text">现代文学</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-two" data-category="科幻玄幻" data-type="8" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/8.png" alt="" />
+                <view class="bookCity-item-text">科幻玄幻</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-three" data-category="网络小说" data-type="9" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/9.png" alt="" />
+                <view class="bookCity-item-text">网络小说</view>
+            </view>
+        </view>
+
+        <view class="bookCity-bod-container">
+            <view class="bookCity-body-item bookCity-body-item-one" data-category="教育学习" data-type="10" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/10.png" alt="" />
+                <view class="bookCity-item-text">教育学习</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-two" data-category="武侠小说" data-type="11" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/11.png" alt="" />
+                <view class="bookCity-item-text">武侠小说</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-three" data-category="人物传记" data-type="12" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/12.png" alt="" />
+                <view class="bookCity-item-text">人物传记</view>
+            </view>
+        </view>
+
+        <view class="bookCity-bod-container">
+            <view class="bookCity-body-item bookCity-body-item-one" data-category="历史地理" data-type="13" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/13.png" alt="" />
+                <view class="bookCity-item-text">历史地理</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-two" data-category="外国小说" data-type="14" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/14.png" alt="" />
+                <view class="bookCity-item-text">外国小说</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-three" data-category="儿童读物" data-type="15" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/15.png" alt="" />
+                <view class="bookCity-item-text">儿童读物</view>
+            </view>
+        </view>
+
+        <view class="bookCity-bod-container">
+            <view class="bookCity-body-item bookCity-body-item-one" data-category="侦探推理" data-type="16" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/16.png" alt="" />
+                <view class="bookCity-item-text">侦探推理</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-two" data-category="网络技术" data-type="17" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/17.png" alt="" />
+                <view class="bookCity-item-text">词典专业</view>
+            </view>
+    
+            <view class="bookCity-body-item bookCity-body-item-three" data-category="恐怖文学" data-type="18" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/18.png" alt="" />
+                <view class="bookCity-item-text">恐怖文学</view>
+            </view>
+        </view>
+
+        <view class="bookCity-bod-container">
+            <view class="bookCity-body-item bookCity-body-item-one" data-category="人文社科" data-type="19" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/19.png" alt="" />
+                <view class="bookCity-item-text">人文社科</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-two" data-category="诗歌散文" data-type="20" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/20.png" alt="" />
+                <view class="bookCity-item-text">诗歌散文</view>
+            </view>
+
+            <view class="bookCity-body-item bookCity-body-item-three" data-category="战争军事" data-type="21" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/21.png" alt="" />
+                <view class="bookCity-item-text">战争军事</view>
+            </view>
+        </view>
+
+        <view class="bookCity-bod-container">
+            <view class="bookCity-body-item bookCity-body-item-one" data-category="励志职场" data-type="22" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/22.png" alt="" />
+                <view class="bookCity-item-text">励志职场</view>
+            </view>
+    
+            <view class="bookCity-body-item bookCity-body-item-two" data-category="自然科学" data-type="23" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/23.png" alt="" />
+                <view class="bookCity-item-text">自然科学</view>
+            </view>
+    
+            <view class="bookCity-body-item bookCity-body-item-three" data-category="旅游地图" data-type="24" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/24.png" alt="" />
+                <view class="bookCity-item-text">旅游地图</view>
+            </view>
+        </view>
+
+        <view class="bookCity-bod-container">
+            <view class="bookCity-body-item bookCity-body-item-one" data-category="心理科学" data-type="25" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/25.png" alt="" />
+                <view class="bookCity-item-text">心理科学</view>
+            </view>
+    
+            <view class="bookCity-body-item bookCity-body-item-two" data-category="政治官场" data-type="26" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/26.png" alt="" />
+                <view class="bookCity-item-text">政治官场</view>
+            </view>
+    
+            <view class="bookCity-body-item bookCity-body-item-three" data-category="外文原版" data-type="27" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/27.png" alt="" />
+                <view class="bookCity-item-text">外文原版</view>
+            </view>
+        </view>
+
+        <view class="bookCity-bod-container">
+            <view class="bookCity-body-item bookCity-body-item-one" data-category="言情耽美" data-type="28" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/28.png" alt="" />
+                <view class="bookCity-item-text">言情耽美</view>
+            </view>
+    
+            <view class="bookCity-body-item bookCity-body-item-two" data-category="艺术与美" data-type="29" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/29.png" alt="" />
+                <view class="bookCity-item-text">艺术与美</view>
+            </view>
+    
+            <view class="bookCity-body-item bookCity-body-item-three" data-category="分类不明" data-type="0" bindtap="goBookType">
+                <image class="bookCity-item-image" src="http://o7irw3n51.bkt.clouddn.com/image/bookcity/0.png" alt="" />
+                <view class="bookCity-item-text">分类不明</view>
+            </view>
+        </view>
+    </view>
+</view>

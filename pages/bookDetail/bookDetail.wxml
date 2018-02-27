@@ -1,0 +1,36 @@
+<view class="bookDetail-header">
+    <view class="bookDetail-header-left">
+        <image class="bookDetail-header-image" src="{{bookDetail.book.imgUrl}}" />
+    </view>
+    <view class="bookDetail-header-right">
+        <view class="bookDetail-header-name">
+            {{bookDetail.book.name}}
+        </view>
+        <view class="bookDetail-header-author">
+            {{bookDetail.book.author}}
+        </view>
+        <view class="bookDetail-header-grade">
+            {{bookDetail.book.doubanScore || '暂无评'}}分
+        </view>
+    </view>
+</view>
+
+<view class="bookDetail-tag" wx:if="{{bookTags}}">
+    <view class="bookDetail-tag-title">分类标签</view>
+    <view class="bookDetail-tag-type" wx:for="{{bookTags}}" wx:key="{{index}}" wx:item="item" data-tag="{{item}}" bindtap="goBookTag">{{item}}</view>
+</view>
+
+<view class="bookDetail-content" wx:if="{{bookContent}}">
+    <view class="bookDetail-content-title">内容简介</view>
+    <view class="bookDetail-content-info {{isShowPartContent ? 'text-overflow' : ''}}">
+        {{bookContent}}
+    </view>
+    <view wx:if="{{isShowPartContent}}" class="bookDetail-show-all" bindtap="doShowAllContent">展开全文</view>
+    <view wx:if="{{!isShowPartContent}}" class="bookDetail-show-all" bindtap="doShowAllContent">收起全文</view>
+</view>
+
+<view class="bookDetail-operate">
+    <view class="bookDetail-operate-button-collect" wx:if="{{bookStatus == 'DEFAULT'}}" bindtap="doCollect">收藏</view>
+    <view class="bookDetail-operate-button-collect" wx:if="{{bookStatus != 'DEFAULT'}}" bindtap="doCancelCollect">取消收藏</view>
+    <view class="bookDetail-operate-button-push" bindtap="doPush">推送</view>
+</view>

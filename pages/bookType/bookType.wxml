@@ -1,0 +1,19 @@
+<view class="main">
+
+    <view class="tab-content">
+        <view class="tab-content-bookType" wx:for="{{bookCategoryList}}" wx:key="{{index}}" wx:item="item" data-id="{{item.id}}" bindtap="goBookDetail">
+            <view class="bookType-left">
+                <image class="bookType-left-image" src="{{item.imgUrl}}" />
+            </view>
+            <view class="bookType-right">
+                <view class="bookType-title" data-id="{{item.id}}" data-title="{{item.name}}">{{item.name}}</view>
+                <view class="bookType-author">{{item.author || ''}}</view>
+                <view class="bookType-doubanScore">豆瓣评分：{{item.doubanScore}}</view>
+            </view>
+        </view>
+        <view class="load-more" bindtap="getMoreRecList">
+            <image wx:if="{{isLoading}}" class="is-loading" src="../../assets/loading.gif" />{{loadMore}}
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,18 @@
+<!-- 输入框 -->
+<view class="search-page-wrapper">
+    <!-- <view class="search-page-text"> -->
+    <input class="search-page-text" value="{{searchValue}}" placeholder-style="color: #cdcdcd" placeholder="搜索" focus="isFocus"
+        bindinput="bindKeyInput"></input>
+    <!-- </view> -->
+    <view class="search-page-button" bindtap="doSearch">
+        <image class="search-page-button-icon" src="../../assets/search.png" />
+    </view>
+</view>
+
+<view class="search-page-result">
+    <view class="search-page-item" wx:for="{{resultList}}" wx:key="{{index}}" wx:item="item" data-id="{{item.id}}" bindtap="goBookDetail">
+        <view class="search-page-item-name">{{item.name}}</view>
+        <view class="search-page-item-author">{{item.author}}</view>
+        <view class="search-page-item-clear"></view>
+    </view>
+</view>

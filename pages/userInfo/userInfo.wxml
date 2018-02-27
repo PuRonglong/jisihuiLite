@@ -1,0 +1,113 @@
+<view class="userInfo" wx:if="{{typeName == '登录'}}">
+    <view class="userInfo-write" wx:if="{{userInfoType =='未登录' }}">
+        <input bindinput="bindKeyInputMail" placeholder="请输入登录邮箱" class="userInfo-input userInfo-input-name" />
+        <input bindinput="bindKeyInputPassword" placeholder="请输入密码" class="userInfo-input userInfo-input-password" password="isPassword" />
+    </view>
+
+    <button size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="doLogin" hover-class="other-button-hover"
+    class="login-button">立即登录</button>
+
+    <text class="userInfo-register" bindtap="goRegister">新用户注册 ></text>
+    <text class="userInfo-forget" bindtap="goForget">忘记密码?</text>
+</view>
+
+<view class="vipCenter" wx:if="{{typeName == '会员中心'}}">
+    <view class="userInfo-vipCenter-username">{{userInfo.nickName ? userInfo.nickName : ''}}</view>
+    <view class="userInfo-vipCenter-remind">开通会员可享更多推送数量哦~</view>
+    <image class="userInfo-vipCenter-tequan" src="../../assets/mine/tequan.png" alt="" />
+
+    <view class="userInfo-vipCenter-priceContainer">
+        <view class="userInfo-vipCenter-priceContainerListOne" bindtap="clickOne" data-type="1个月">
+            <text class="userInfo-vipCenter-vipTime">1个月</text>
+            <text class="userInfo-vipCenter-price">6元</text>
+            <image wx:if="{{selectName == '1个月'}}" class="userInfo-vipCenter-selected" src="../../assets/mine/selected.png" alt="" />
+        </view>
+        <view class="userInfo-vipCenter-priceContainerListOne" bindtap="clickOne" data-type="6个月">
+            <text class="userInfo-vipCenter-vipTime">6个月</text>
+            <text class="userInfo-vipCenter-price">32元</text>
+            <del class="userInfo-vipCenter-oldPrice">原价36元</del>
+            <image wx:if="{{selectName == '6个月'}}" class="userInfo-vipCenter-selected" src="../../assets/mine/selected.png" alt="" />
+        </view>
+        <view class="userInfo-vipCenter-priceContainerListOne" bindtap="clickOne" data-type="12个月">
+            <text class="userInfo-vipCenter-vipTime">12个月</text>
+            <text class="userInfo-vipCenter-price">60元</text>
+            <text class="userInfo-vipCenter-oldPrice">原价72元</text>
+            <image wx:if="{{selectName == '12个月'}}" class="userInfo-vipCenter-selected" src="../../assets/mine/selected.png" alt="" />
+        </view>
+    </view>
+
+    <button size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" hover-class="other-button-hover"
+        class="vip-button" bindtap="vipButton">开通</button>
+
+</view>
+
+<view class="userInfo-collect" wx:if="{{typeName == '收藏' || typeName == '推送记录'}}">
+    <view class="userInfo-collect-listOne" wx:for="{{colletBookList}}" wx:key="{{index}}" wx:item="item">
+        <view data-id="{{item.book.id}}" data-title="{{item.book.name}}" bindtap="goBookDetail">
+            <view class="userInfo-collect-listOne-title">
+                <text class="userInfo-collect-listOne-name">{{item.book.name}}</text>
+                <text class="userInfo-collect-listOne-author">{{item.book.author}}</text>
+            </view>
+            <view class="userInfo-collect-listOne-tags">
+                {{item.book.tags || '暂无标签'}}
+            </view>
+            <view class="userInfo-collect-listOne-time">
+                {{item.formatTime}}
+            </view>
+        </view>
+    </view>
+</view>
+
+<view wx:if="{{typeName == '读书活动'}}">
+    <web-view src="{{bookActivityUrl}}"></web-view>
+</view>
+
+<view wx:if="{{typeName == '使用帮助'}}">
+    <web-view src="{{useHelpUrl}}"></web-view>
+</view>
+
+<view wx:if="{{typeName == '关于我们'}}">
+    <view class="userCenter-about-title">
+        <image class="userCenter-about-logo" src="../../assets/mine/logo.png" alt="" />
+    </view>
+    <view class="userCenter-about-offical">
+        <view class="userCenter-about-listOne">
+            <text class="userCenter-about-listOne-key">官方QQ群</text>
+            <text class="userCenter-about-listOne-value">246388544</text>
+        </view>
+        <view class="userCenter-about-listOne">
+            <text class="userCenter-about-listOne-key">微信公众号</text>
+            <text class="userCenter-about-listOne-value">jisihuidushu</text>
+        </view>
+        <view class="userCenter-about-listOne">
+            <text class="userCenter-about-listOne-key">意见反馈</text>
+            <text class="userCenter-about-listOne-value">jisihui@yeah.net</text>
+        </view>
+        <view class="userCenter-about-listOne">
+            <text class="userCenter-about-listOne-key">官网</text>
+            <text class="userCenter-about-listOne-value">https://jisihui.com</text>
+        </view>
+    </view>
+    <view class="userCenter-about-bottom">
+        Copyright.集思会
+    </view>
+</view>
+<view wx:if="{{typeName == '账号'}}">
+    <view class="userCenter-account">
+        <view class="userCenter-account-listOne">
+            <text>昵称：</text>
+            <text>{{userInfo.nickName}}</text>
+        </view>
+        <view class="userCenter-account-listOne">
+            <text>账号：</text>
+            <text>{{userInfo.username}}</text>
+        </view>
+        <view class="userCenter-account-listOne">
+            <text>推送邮箱：</text>
+            <text>{{userInfo.pushMail}}</text>
+        </view>
+    </view>
+
+    <button size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="doLogout" hover-class="other-button-hover"
+        class="logout-button">退出登录</button>
+</view>

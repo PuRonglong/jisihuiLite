@@ -1,0 +1,176 @@
+page {
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  padding-bottom: 40rpx;
+  height: 100%;
+}
+.userInfo{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 50rpx;
+}
+.inputInfo{
+  padding: 5rpx;
+}
+.userInfo-write{
+  margin-bottom: 30rpx;
+  background-color: #fff;
+}
+.userInfo-input{
+  padding: 20rpx;
+  font-size: 30rpx;
+}
+.userInfo-register{
+ color: #9e9b9b;
+ font-size: 30rpx;
+ margin-top: 30rpx;
+ text-align: right;
+ /* display: inline-block; */
+ float: right;
+}
+.userInfo-forget{
+  color: #ff8862;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  /* display: inline-block; */
+  float: left;
+}
+.userInfo-input-name{
+  border-bottom: 2rpx solid #F6F6F6;
+}
+.login-button{
+  background-color: #ff8862;
+  color: #fff;
+}
+.vip-button{
+  background-color: #ff8862;
+  color: #fff;
+  width: 600rpx;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx #ccc;
+}
+.userInfo-vipCenter-username{
+  text-align: center;
+  margin-top: 40rpx;
+}
+.userInfo-vipCenter-remind{
+  color: #ccc;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.userInfo-vipCenter-tequan{
+  width: 100%;
+  height: 180rpx;
+  width: 750rpx;
+  margin-top: 30rpx;
+}
+.userInfo-vipCenter-vipTime{
+  width: 450rpx;
+  display: inline-block;
+}
+.userInfo-vipCenter-price{
+  color: #ff8862;
+}
+.userInfo-vipCenter-priceContainer{
+  background-color: #fff;
+  margin-bottom: 80rpx;
+}
+.userInfo-vipCenter-priceContainerListOne{
+  border-bottom: 2rpx solid #ccc;
+  padding: 20rpx;
+}
+.userInfo-vipCenter-oldPrice{
+  margin-left: 10rpx;
+  text-decoration:line-through;
+  font-size: 25rpx;
+  color: #ccc;
+}
+.userInfo-vipCenter-selected{
+  width: 25rpx;
+  height: 25rpx;
+  float: right;
+}
+.userInfo-collect{
+  background-color: #fff;
+}
+.userInfo-collect-listOne{
+  padding: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.userInfo-collect-listOne-title{
+  margin-bottom: 20rpx;
+}
+.userInfo-collect-listOne-author{
+  float: right;
+  font-size: 30rpx;
+  color: #ccc;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space:nowrap;
+  width: 200rpx;
+  text-align: right;
+}
+.userInfo-collect-listOne-tags{
+  color: rgb(136, 135, 135);
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+.userInfo-collect-listOne-time{
+  color: rgb(136, 135, 135);
+  font-size: 25rpx;
+}
+.userCenter-about-title{
+  text-align: center;
+  margin-top: 50rpx;
+  margin-bottom: 30rpx;
+}
+.userCenter-about-logo{
+  width: 100rpx;
+  height: 100rpx;
+}
+.userCenter-about-offical{
+  background-color: #fff;
+}
+.userCenter-about-listOne{
+  border-bottom: 2rpx solid #ccc;
+  padding: 20rpx;
+}
+.userCenter-about-listOne-key{
+
+}
+.userCenter-about-listOne-value{
+  color: #696361;
+  font-size: 30rpx;
+  float: right;
+}
+.userCenter-about-bottom{
+  color: #696361;
+  position: absolute;
+  text-align: center;
+  bottom: 100rpx;
+  font-size: 30rpx;
+  /* display: inline-block; */
+  width: 750rpx;
+}
+.userCenter-account{
+  background-color: #fff;
+  width: 700rpx;
+  margin: 0 auto;
+  border-radius: 15rpx;
+  margin-bottom: 30rpx;
+  margin-top: 20rpx;
+}
+.userCenter-account-listOne{
+  padding: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+  font-size: 30rpx;
+  color: #696361;
+}
+.logout-button{
+  width: 600rpx;
+  background-color: #ff8862;
+  color: #fff;
+}

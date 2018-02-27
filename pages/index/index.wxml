@@ -1,0 +1,87 @@
+<view class="market-wrapper">
+
+    <!-- 输入框 -->
+    <view class="market-search-wrapper">
+        <view class="market-search-text">
+            <text class="market-search-text-text"></text>
+            <input class="market-search-text-input" disabled="isInputDisabled" placeholder-style="color: #cdcdcd" placeholder="搜索"
+            bindtap="goSearchPage"></input>
+        </view>
+        <!-- <view class="market-search-button" bindtap="goSearchPage">
+            <image class="market-search-button-icon" src="../../assets/search.png" />
+        </view> -->
+    </view>
+
+    <view class="market-icon">
+        <!-- 轮播图 -->
+        <!-- <swiper class="market-swiper-wrapper" circular="{{autoplay}}" indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}"
+            duration="{{duration}}">
+            <block wx:for="{{pictureList}}" wx:key="{{index}}" wx:item="item">
+                <swiper-item class="market-swiper">
+                    <view class="market-swiper-item">
+                        <image class="market-swiper-img" src="{{item.picUrl}}" />
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper> -->
+
+        <!-- 轮播图下方的导航图标 -->
+        <view class="market-icon-list">
+            <view class="market-icon-item" bindtap="goRankList">
+                <image class="market-icon-img" src="http://o7irw3n51.bkt.clouddn.com/image/index/1.png" />
+                <view class="market-icon-text">榜单</view>
+            </view>
+            <view class="market-icon-item" bindtap="goBookCity">
+                <image class="market-icon-img" src="http://o7irw3n51.bkt.clouddn.com/image/index/2.png" />
+                <view class="market-icon-text">分类</view>
+            </view>
+            <view class="market-icon-item" bindtap="goBookList">
+                <image class="market-icon-img" src="http://o7irw3n51.bkt.clouddn.com/image/index/4.png" />
+                <view class="market-icon-text">书单</view>
+            </view>
+            <!-- <view class="market-icon-item">
+                <image class="market-icon-img" src="http://o7irw3n51.bkt.clouddn.com/image/index/3.png" />
+                <view class="market-icon-text">活动</view>
+            </view> -->
+        </view>
+
+        <view class="market-book">
+            <view class="market-book-header">
+                <view class="market-book-text">精品图书</view>
+                <view class="market-book-more" data-category="精品图书" data-type="GOOD" bindtap="goMoreBook">更多>></view>
+            </view>
+            <view class="market-book-list">
+                <view class="market-book-item" wx:for="{{goodBookList}}" wx:key="{{index}}" wx:item="item" data-item="{{item}}" data-id="{{item.id}}" bindtap="goBookDetail">
+                    <image class="market-book-img" src="{{item.imgUrl}}" />
+                    <view class="market-book-name">{{item.name}}</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="market-book">
+            <view class="market-book-header">
+                <view class="market-book-text">随便看看</view>
+                <view class="market-book-more" data-category="随便看看" data-type="HOT" bindtap="goMoreBook">更多>></view>
+            </view>
+            <view class="market-book-list">
+                <view class="market-book-item" wx:for="{{hotBookList}}" wx:key="{{index}}" wx:item="item" data-item="{{item}}" data-id="{{item.id}}" bindtap="goBookDetail">
+                    <image class="market-book-img" src="{{item.imgUrl}}" />
+                    <view class="market-book-name">{{item.name}}</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="market-book">
+                <view class="market-book-header">
+                    <view class="market-book-text">最新上架</view>
+                    <view class="market-book-more" data-category="最新上架" data-type="HOT" bindtap="goMoreBook">更多>></view>
+                </view>
+                <view class="market-book-list">
+                    <view class="market-book-item" wx:for="{{newBookList}}" wx:key="{{index}}" wx:item="item" data-item="{{item}}" data-id="{{item.id}}" bindtap="goBookDetail">
+                        <image class="market-book-img" src="{{item.imgUrl}}" />
+                        <view class="market-book-name">{{item.name}}</view>
+                    </view>
+                </view>
+            </view>
+    </view>
+</view>

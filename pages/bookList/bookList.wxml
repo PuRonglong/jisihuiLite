@@ -1,0 +1,19 @@
+<view class="main">
+
+    <view class="tab-content">
+        <view class="tab-content-bookList" wx:for="{{bookList}}" wx:key="{{index}}" wx:item="item" data-id="{{item.id}}" data-title="{{item.title}}" bindtap="goBookListDetail">
+            <view class="bookList-right">
+                <view class="bookList-title">{{item.title}}</view>
+                <view class="bookList-author">{{item.content}}</view>
+                <view class="bookList-date">{{item.authorName}}  {{item.dateText}}</view>
+            </view>
+            <view class="bookList-left">
+                <image class="bookList-left-image" src="{{item.imgUrl}}" />
+            </view>
+        </view>
+        <view class="load-more" bindtap="getMoreRecList">
+            <image wx:if="{{isLoading}}" class="is-loading" src="../../assets/loading.gif" />{{loadMore}}
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,380 @@
+page {
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  height: 100%;
+}
+.bookCity-container{
+  padding: 20rpx;
+}
+.main{
+  background-color: #f6f6f6
+}
+.bookCity-header-image{
+  height: 200rpx;
+  width: 710rpx;
+  color: #fff;
+  border-radius: 8rpx;
+}
+.bookCity-header-wrapper{
+  position: relative;
+  height: 200rpx;
+}
+.bookCity-header-text{
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -25rpx;
+  font-size: 50rpx;
+  /* bottom: 0; */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  width: 710rpx;
+  text-align: center;
+  height: 50rpx;
+  font-weight: 500;
+  letter-spacing:8rpx;
+}
+.bookCity-body-item{
+  display: inline-block;
+  width: 222rpx;
+  height: 222rpx;
+  border-radius: 8rpx;
+  position: relative;
+}
+.bookCity-body-item-one{
+  margin-right: 20rpx;
+}
+.bookCity-body-item-two{
+  margin-right: 20rpx;
+}
+.bookCity-body-item-three{
+  float: right;
+}
+.bookCity-item-image{
+  width: 222rpx;
+  height: 222rpx;
+  border-radius: 8rpx;
+}
+.bookCity-item-text{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 222rpx;
+  text-align: center;
+  bottom: 0;
+  font-size: 30rpx;
+  border-bottom-right-radius: 8rpx;
+  border-bottom-left-radius: 8rpx;
+  color: #fff;
+}
+.bookCity-bod-container{
+  margin-top: 20rpx;
+  display: flex;
+}
+.bookCity-userinfo-avatar{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  float: left;
+}
+.bookCity-header-rec{
+  float: right;
+  color: #1E8AE8;
+}
+.bookCity-swiper-wrapper{
+  height: 210rpx;
+}
+.bookCity-swiper-item{
+  width: 670rpx;
+  margin: 20rpx;
+  padding: 20rpx;
+  border: 2rpx solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10rpx;
+  box-shadow: -2rpx 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+.bookCity-swiper-dis{
+  color: #1E8AE8;
+  font-style: italic;
+  font-size: 28rpx;
+}
+.bookCity-swiper-number{
+  display: inline-block;
+  font-style: normal;
+  font-size: 24rpx;
+  color: #1E8AE8;
+  margin-left: 20rpx;
+}
+.bookCity-swiper-img{
+  width: 120rpx;
+  height: 80rpx;
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+}
+.bookCity-swiper-title{
+  color: #323233;
+  font-size: 26rpx;
+  margin: 10rpx 0 6rpx;
+}
+.bookCity-swiper-tip{
+  color: #999;
+  font-size: 24rpx;
+}
+.bookCity-swiper-title,
+.bookCity-swiper-tip{
+  width: 100%;
+  float: left;
+}
+.bookCity-focus-list{
+  width: 710rpx;
+  padding: 10rpx 20rpx;
+  background: #fff;
+}
+.bookCity-focus-item{
+  position: relative;
+}
+.bookCity-focus-title{
+  color: #323233;
+  font-size: 28rpx;
+  font-weight: 500;
+  margin: 15rpx;
+}
+.bookCity-focus-avatar,
+.bookCity-hot-avatar{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bookCity-focus-info,
+.bookCity-hot-info{
+  width: 620rpx;
+  display: inline-block;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  vertical-align: middle;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.2);
+}
+.last{
+  border: none;
+}
+.bookCity-focus-introduce{
+  color: #999;
+  font-size: 26rpx;
+}
+.bookCity-focus-btn,
+.bookCity-hot-btn{
+  position: absolute;
+  right: 20rpx;
+  top: 40rpx;
+  color: #1E8AE8;
+}
+.has-focus{
+  color: #999;
+}
+.bookCity-focus-control{
+  text-align: center;
+}
+.bookCity-focus-button{
+  display: inline-block;
+  width: 270rpx;
+  font-size: 24rpx;
+  padding: 10rpx;
+  text-align: center;
+  margin: 10rpx;
+}
+.bookCity-focus-refresh{
+  color: #1E8AE8;
+  border: 1rpx solid #1E8AE8;
+  border-radius: 5rpx;
+}
+.bookCity-focus-all{
+  color: #fff;
+  background: #1E8AE8;
+  border: 1rpx solid #1E8AE8;
+  border-radius: 5rpx;
+}
+.bookCity-icon-wrapper{
+  width: 50rpx;
+  height: 30rpx;
+  margin-top: 5rpx;
+  position: relative;
+  display: inline-block;
+}
+.bookCity-focus-icon{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 0;
+}
+.bookCity-icon-best{
+  left: 0;
+  z-index: 1;
+}
+.bookCity-icon-auth{
+  left: 5rpx;
+}
+.bookCity-hot-list{
+  font-size: 28rpx;
+}
+.bookCity-hot-header{
+  padding: 20rpx;
+  height: 40rpx;
+  width: 710rpx;
+  background: #f6f6f6;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+}
+.bookCity-hot-item{
+  position: relative;
+  padding: 20rpx;
+  background: #fff;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+}
+.bookCity-hot-info{
+  border: none;
+}
+.bookCity-hot-btn{
+  right: 80rpx;
+}
+.bookCity-control-more{
+  position: absolute;
+  right: 20rpx;
+  top: 40rpx;
+  color: #1E8AE8;
+  width: 50rpx;
+  height: 40rpx;
+  text-align: center;
+}
+.bookCity-control-image{
+  width: 20rpx;
+  height: 20rpx;
+}
+.bookCity-hot-nickname{
+  font-weight: 500;
+}
+.bookCity-hot-content{
+  width: 620rpx;
+  margin-left: 80rpx;
+  color: #333;
+  line-height: 1.6;
+}
+.bookCity-hot-footer{
+  color: #999;
+  font-size: 24rpx;
+  text-align: left;
+  margin-left: 80rpx;
+  padding: 20rpx 0;
+}
+.bookCity-hot-img{
+  width: 24rpx;
+  height: 24rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.bookCity-hot-text{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 40rpx;
+}
+.bookCity-show-all{
+  color: #1E8AE8;
+  margin-left: 80rpx;
+}
+.text-overflow{
+  height: 85rpx;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+}
+.bookCity-footer{
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+  background: #fff;
+  padding: 100rpx;
+}
+.bookCity-footer-btn{
+  color: #1E8AE8;
+}
+.bookCity-drawer{
+  text-align: left;
+  background: #fff;
+  color: #999;
+  padding: 0 30rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%; 
+  z-index: 999;
+}
+.bookCity-drawer-swiper{
+  height: 320rpx;
+}
+.bookCity-drawer-title{
+  font-size: 28rpx;
+  padding: 40rpx 0;
+  text-align: center;
+}
+.bookCity-drawer-item {
+  width: 170rpx;
+  display: inline-block;
+  text-align: center;
+  font-size: 24rpx;
+  padding-bottom: 20rpx;
+}
+.bookCity-drawer-img{
+  width: 80rpx;
+  height: 80rpx;
+}
+.elephant{
+  background: #0e932e;
+  border-radius: 50%;
+}
+.bookCity-drawer-control{
+  border-top: 1rpx solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.2);
+  padding: 20rpx 0 0;
+}
+.bookCity-img-wrapper{
+  width: 80rpx;
+  height: 80rpx;
+  border: 1rpx solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  display: inline-block;
+}
+.bookCity-control-img{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 10rpx auto;
+}
+.bookCity-drawer-cancel{
+  padding: 30rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+.scroll-view{
+  height: 100%;
+}
+.fixed{
+  padding: 20rpx;
+  height: 40rpx;
+  width: 710rpx;
+  background: #f6f6f6;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 70rpx;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}

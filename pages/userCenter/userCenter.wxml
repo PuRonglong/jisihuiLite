@@ -1,0 +1,60 @@
+<view>
+
+    <view class="userinfo" wx:if="{{isLogin}}" data-type="账号" bindtap="goUserInfo">
+        <image class="userinfo-avatar" src="../../assets/mine/icon_user.png" background-size="cover" />
+        
+        <view class="userinfo-info">
+            <text class="userinfo-nickname">{{isLogin ? userInfo.nickName : ''}}</text>
+            <view class="userinfo-member">
+                <image class="userinfo-vip-image" src="../../assets/mine/not_vip.png" wx:if="{{!isInVipTime}}"/>
+                <image class="userinfo-vip-image" src="../../assets/mine/is_vip.png" wx:if="{{isInVipTime}}"/>
+            </view>
+            <image class="userinfo-avatar-more" src="../../assets/to-more.png" />
+            <view class="userinfo-tip">{{userInfo.username}}</view>
+        </view>
+    </view>
+
+    <view class="userinfo" wx:if="{{!isLogin}}" data-type="登录" bindtap="goUserInfo">
+        <image class="userinfo-avatar" src="../../assets/mine/icon_user.png" background-size="cover" />
+
+        <view class="userinfo-login">
+            <text class="userinfo-clickLogin">点击登录</text>
+            <image class="userinfo-avatar-more" src="../../assets/to-more.png" />
+        </view>
+    </view>
+
+    <view class="user-list">
+        <view class="user-list-item" data-type="会员中心" bindtap="goUserInfo">
+            <text class="user-list-title">我的会员</text>
+            <text class="user-list-vipTime">{{vipTime?vipTime + '到期' : '开通会员'}}</text>
+            <image class="user-list-more" src="../../assets/to-more.png" />
+        </view>
+
+        <view class="user-list-item" data-type="收藏" bindtap="goUserInfo">
+            <text class="user-list-title">我的收藏</text>
+            <image class="user-list-more" src="../../assets/to-more.png" />
+        </view>
+
+        <view class="user-list-item" data-type="推送记录" bindtap="goUserInfo">
+            <text class="user-list-title">推送记录</text>
+            <image class="user-list-more" src="../../assets/to-more.png" />
+        </view>
+
+        <!-- <view class="user-list-item" data-type="读书活动" bindtap="goUserInfo">
+            <text class="user-list-title">最新活动</text>
+            <image class="user-list-more" src="../../assets/to-more.png" />
+        </view> -->
+    </view>
+
+    <view class="user-list">
+        <!-- <view class="user-list-item" data-type="使用帮助" bindtap="goUserInfo">
+            <text class="user-list-title">使用帮助</text>
+            <image class="user-list-more" src="../../assets/to-more.png" />
+        </view> -->
+
+        <view class="user-list-item" data-type="关于我们" bindtap="goUserInfo">
+            <text class="user-list-title">关于我们</text>
+            <image class="user-list-more" src="../../assets/to-more.png" />
+        </view>
+    </view>
+</view>
