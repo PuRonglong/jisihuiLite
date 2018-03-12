@@ -1,14 +1,17 @@
-# jisihuiLite
+# 集思会Lite 小程序
 
-[![](https://badge.juejin.im/entry/5a959a936fb9a063543c5ad8/likes.svg?style=flat)](https://juejin.im/post/5a791ed05188254e76178c7b)
+## 访问
+
+* 微信搜索集思会Lite
+* 扫码访问
+
+![二维码](/images/2.jpg)
+
+## 预览
+
+![首页](/images/1.jpg)
 
 最近接触小程序，记录一下从零开发到提交审核正式发布的完整过程，和其中踩过的坑，与大家一起学习。
-
-最终效果
-
-![效果展示](http://upload-images.jianshu.io/upload_images/165092-dee6d16c1a3c0041.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![集思会Lite](http://upload-images.jianshu.io/upload_images/165092-774431ef59cb084e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 一.选型
 
@@ -197,8 +200,3 @@ Unauthorized access
 但是，在后来的一段时间里，我感觉几乎每周，都能收到小程序功能升级的推送，在冷清的市场中，微信依然有周期的迭代新的功能，而且更新的频率也刚好，让人感觉，哎，现在功能月来越多，是不是可以尝试一下了。
 
 而小程序再一次高调吸引眼球的，是2017年底更新的小游戏功能，微信客户端更新后再次进去首屏，就是当时刷屏的“跳一跳”小程序了。可以嵌入网页，可以打开APP等等越来越多的功能升级，小程序的热度逐渐从高到低再到回归正常，它在不断摸索中寻找自己在市场中的定位，又，何尝不像我们。
-
-最后附上小程序码：
-
-![集思会Lite](http://upload-images.jianshu.io/upload_images/165092-774431ef59cb084e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
